@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline block example</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body{
+            /* background: linear-gradient(#e66465, #9198e5);*/ /*just by setting the colors, the page is displayed as boxes*/
+            background: linear-gradient(90deg, #9198e5 0%, #f4f0f0 100% );
+        }
+        div,p {
+            border: 5px;
+            /*inline doesnt allow you to set width and height*/
+            /* display: inline-block; */ /*inline-block allows you to set width and height and elements are placed side by side*/
+            /* display: block; */ /*block allows you to set width and height and elements are placed one below the other*/
+            display: block;
+            border-color: black;
+            border-style: double;
+            border-radius: 5px;
+            height:60px;
+            width:70px;
+            font-family: "Montserrat", sans-serif; /*Monterserrat font is taken from google fonts and we need to import google fonts for this line number:8*/
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div>One</div>
+    <!-- <div>Two</div> -->
+    <p>Two</p>
+    <div>Three</div>
+    <div>Four</div>
+</body>
+</html>
